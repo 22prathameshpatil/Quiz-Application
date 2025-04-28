@@ -5,13 +5,13 @@ import AttemptQuiz from '../pages/AttemptQuiz';
 import CreateQuiz from '../pages/CreateQuiz';
 import Home from '../pages/Home';
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex flex-col min-h-screen bg-gray-100">
         <Navbar />
         <main className="flex-1">
@@ -24,7 +24,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
